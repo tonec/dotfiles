@@ -1,3 +1,7 @@
+[user]
+	name = Tony Coop
+	email = tony@thewholeworldwindow.co.uk
+
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -164,3 +168,10 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
