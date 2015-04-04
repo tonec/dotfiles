@@ -17,14 +17,15 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
-alias cl='clear'
-alias gs='git status'
-alias ga='git add'
-alias gc='git commit'
-alias gcm='git commit -m'
-alias ls='ls -GFh'
+alias cl="clear"
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gdf="git diff --cached"
+alias ls="ls -GFh"
 
-alias artisan='php artisan'
+alias artisan="php artisan"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
